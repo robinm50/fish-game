@@ -28,16 +28,16 @@ export class Game extends Engine {
         // fish.events.on("exitviewport", (e) => this.fishLeft(e)) //wat er gebeurt als de actor het scherm verlaat na de , is wat die uitvoert
         // this.add(fish)// toevoegen aan de scene this omdat je in de game zit
 
-        // const shark = new Actor()
-        // shark.graphics.use(Resources.Shark.toSprite()) 
-        // shark.pos= new Vector(1000, 500)
-        // shark.vel = new Vector(300,0)
-        // shark.events.on("exitviewport", (e) => this.sharkRight(e))
-        // this.add(shark)
+        const shark = new Actor()
+        shark.graphics.use(Resources.Shark.toSprite()) 
+        shark.pos= new Vector(1000, 500)
+        shark.vel = new Vector(300,0)
+        shark.events.on("exitviewport", (e) => this.sharkRight(e))
+        this.add(shark)
         
-        // for(let i = 0; i < 100; i++){
-        //     this.createBubble()
-        // }
+        for(let i = 0; i < 100; i++){
+            this.createBubble()
+        }
     }
 
 createBubble(){
